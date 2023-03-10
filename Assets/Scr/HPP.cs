@@ -7,12 +7,12 @@ public class HPP : MonoBehaviour
 {
     public int Health;
     public Text ZZ;
-    public void OnTriggerEnter(Collider other)
-    {
-        Health= 0;
-        Object.Destroy(this.gameObject);
-        Debug.Log("„B„p„ƒ„‘");
-    }
+    //public void OnTriggerEnter(Collider other)
+    //{
+    //    Health= 0;
+    //    Object.Destroy(this.gameObject);
+    //    Debug.Log("„B„p„ƒ„‘");
+    //}
 
     public void Update()
     {

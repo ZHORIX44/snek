@@ -17,7 +17,8 @@ public class Cont : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        
+        Time.fixedDeltaTime= 0.01f;
+        R.velocity = new Vector3(-8, 0, 0);
         //R.AddForce(-VPERED, 0, 0,ForceMode.Impulse);        
         //Vector3 CurrentVelocity= R.velocity;
         //CurrentVelocity.x =Mathf.Clamp(CurrentVelocity.x, 0, 20);
@@ -27,7 +28,7 @@ public class Cont : MonoBehaviour
     }
     void Update()
     {
-        R.velocity = new Vector3(-4,0,0);
+        //R.velocity = new Vector3(-4,0,0);
 
         if (Input.GetKey(KeyCode.D))
         {
